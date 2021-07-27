@@ -5,38 +5,75 @@
     <link rel="stylesheet" href="style.css">
     <title>CV</title>
   </head>
-  <body id="main-block">
-      <div id="main-block">
-        <section id="person-main-info">
-            <h1 id="name">Alexandr Kuznecov</h1>
-            <img></img>
+  <body>      
+  <div class="main-block">
+        <header>
+            <section id="person-main-info">
+                <h1 id="name">Alexandr Kuznecov</h1>
+                <figure>
+                    <img class="avatar" src="avatar.jpg" alt="avatar" />
+                    <figcaption>Alexandr Kuznecov</figcaption>
+                </figure>
+            </section>
+        </header>
+        <main>
+         <section id="person-contacts-info">
+            <h2>Info:</h2>
+            <ul>
+              <li><b>PHOHE:</b> +79277551983</li>
+              <li><b>EMAIL:</b> tvnetru@gmail.com</li>
+              <li><b>ADDRESS:</b> Samara</li>
+            </ul>
         </section>
         <section id="person-skill">
-            <p>My skills:</p>
+            <h2>My skills:</h2>
             <ul>
                 <li>Java</li>
                 <li>Html/Css</li>
                 <li>Git</li>
             </ul>
         </section>
-        <section id="person-COMPETENCIES main-block">
-            <p>COMPETENCIES:</p>
+        <section id="person-COMPETENCIES">
+            <h3>COMPETENCIES:</h3>
             <p>Purposeful, industrious, responsible, stress-resistant, inquiring, friendly</p>
         </section>
-        <section id="person-profile main-block">
-            <p>Work:</p>
+        <section id="person-profile">
+            <h4>Work:</h4>
             <p>Company Names, Grodno, BY 16.11.2015 - till now
                 Programmer</p>
         </section>
-        <section id="person-edu main-block">
-                <p>Education:</p>
+        <section id="person-edu">
+                <h5>Education:</h5>
                 <p>Higher
                     Yanka Kupala State University of Grodno Faculty of Mathematics and Informatics</p>
         </section>
-        <section id="person-code main-block">
-                <p>Code:</p>
-                <p>I do not have</p>
+        <section id="person-code">
+                <h6>Code:</h6>
+                <pre><code>override fun onCreate(savedInstanceState: Bundle?) {
+                    super.onCreate(savedInstanceState)
+                    setContentView(R.layout.fragment_maps)
+                    // Obtain the SupportMapFragment and get notified when the map is ready to be used.
+                    val mapFragment = supportFragmentManager
+                        .findFragmentById(R.id.text_map) as SupportMapFragment
+                    mapFragment.getMapAsync(this)
+                }</code></pre>
         </section>
+        </main>
+        <footer id="footer">
+            <figure>
+              <a href="https://rs.school/js/">
+                <img
+                  src="https://rs.school/images/rs_school_js.svg"
+                  alt="Ссылка на курс"
+                />
+              </a>
+              <p>
+                <a href="https://github.com/TheEnjoy/rsschool-cv"
+                  >https://github.com/TheEnjoy</a
+                >, 2021
+              </p>
+            </figure>
+          </footer>
     </div>
   </body>
 </html>
